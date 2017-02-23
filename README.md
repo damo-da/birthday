@@ -1,5 +1,13 @@
 
+# DEPRECATED
+
+This repoository is deprecated in favor of the
+sample [here](https://github.com/GoogleCloudPlatform/python-docs-samples/tree/master/appengine/standard/django).
+Please see the [associated tutorial](https://cloud.google.com/python/django/appengine).
+
+
 # Python Django Skeleton for Google App Engine
+
 
 A skeleton for building Python applications on Google App Engine with the
 [Django Web Framework](https://www.djangoproject.com/) using
@@ -90,15 +98,15 @@ Please note that only 1st generation CloudSQL instance are currently supported f
 
 * From the Google Cloud Console, go to [Storage > CloudSQL> Create Instance](https://console
  .developers.google.com/project/_/sql/create)
-    
+
 * Under [Access Control > IP Address](https://console.developers.google.com/project/_/sql/instances/polls/access-control/ip),  Request IPv4 Address. This address will be your HOST for remote access to the
       CloudSQL instance in mysite/settings.py, so replace `<your-database-host>` with this address.
 
 * Under [Databases](https://console.developers.google.com/project/_/sql/instances/polls/databases), click New Database and create the name for your database in mysite/settings.py. Replace
-    
+
       `<your-database-name>` with this value.
 
-At this point, your deployed AppEngine application can access the database, after you replace 
+At this point, your deployed AppEngine application can access the database, after you replace
 `<your-project-id>:<your-cloudsql-instance>` and
 `<your-database-name>` in mysite/settings.py. The following instructions are to connect to the same CloudSQL instance
 locally. Alternatively, you could install a local MySQL instance and use that in development.
@@ -117,6 +125,7 @@ socket as root. When testing locally, use the settings created above to access t
 1. Create and run the Django migrations:
 
     ```
+    python manage.py makemigrations polls
     python manage.py migrate
     ```
 
