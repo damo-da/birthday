@@ -96,8 +96,9 @@ if os.getenv('SERVER_SOFTWARE', '').startswith('Google App Engine'):
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'HOST': '/cloudsql/<your-project-id>:<your-cloud-sql-instance>',
-            'NAME': '<your-database-name>',
+            'HOST': '/cloudsql/graphic-theory-196021:abcd',
+            'NAME': 'gae1',
+            'PASSWORD': 'efgh',
             'USER': 'root',
         }
     }
@@ -105,13 +106,23 @@ else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': '<your-database-name>',
-            'USER': '<your-database-user>',
-            'PASSWORD': '<your-database-password>',
-            'HOST': '<your-database-host>',
+            'NAME': 'gae1',
+            'USER': 'root',
+            'PASSWORD': '',
+            'HOST': 'localhost',
             'PORT': '3306',
         }
     }
+    # DATABASES = {
+    #     'default': {
+    #         'ENGINE': 'django.db.backends.mysql',
+    #         'NAME': 'gae1',
+    #         'USER': 'root',
+    #         'PASSWORD': 'efgh',
+    #         'HOST': '104.196.192.62',
+    #         'PORT': '3306',
+    #     }
+    # }
 # [END db_setup]
 
 # Internationalization

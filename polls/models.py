@@ -14,13 +14,38 @@
 
 from django.db import models
 
+GENDER_CHOICES = (
+    ('M', 'Male'),
+    ('F', 'Female'),
+)
 
-class Question(models.Model):
-    question_text = models.CharField(max_length=200)
-    pub_date = models.DateTimeField('date published')
+ARTICLE_CHOICES = (
+    ('A', 'A'),
+    ('An', 'An'),
+    ('The', 'The'),
+)
+
+class SuperHero(models.Model):
+    
+    
+    
+    def __str__(self):
+        return self.name
+        
+    
+    name = models.CharField(max_length=200)
+    gender = models.CharField(max_length=1, choices=GENDER_CHOICES, default='M')
+    article = models.CharField(max_length=3, choices=ARTICLE_CHOICES)
+    literature_from = models.CharField(max_length=200, blank=True, default='')
+    desc = models.CharField(max_length=2000, blank=True, default='')
 
 
-class Choice(models.Model):
-    question = models.ForeignKey(Question)
-    choice_text = models.CharField(max_length=200)
-    votes = models.IntegerField(default=0)
+class Person(models.Model):
+    hero = models.ForeignKey(SuperHero)
+    
+    first_name = models.CharField(max_length=200)
+    middle_name = models.CharField(max_length=200, blank=True, default='')
+    last_name = models.CharField(max_length=200)
+    gender = models.CharField(max_length=1, choices=GENDER_CHOICES, default='M')
+    w_number = models.CharField(max_length=8, blank=True, default='')
+    birth_date = models.DateField()
