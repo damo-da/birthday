@@ -1,0 +1,398 @@
+[
+  {
+    "model": "polls.superhero",
+    "pk": 38,
+    "fields": {
+      "name": "Captain America",
+      "gender": "M",
+      "article": "a",
+      "literature_from": "",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 39,
+    "fields": {
+      "name": "Dr. Strange",
+      "gender": "M",
+      "article": "a",
+      "literature_from": "",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 40,
+    "fields": {
+      "name": "Ghost Rider",
+      "gender": "M",
+      "article": "a",
+      "literature_from": "",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 41,
+    "fields": {
+      "name": "Wolverine",
+      "gender": "M",
+      "article": "a",
+      "literature_from": "",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 42,
+    "fields": {
+      "name": "Spiderman",
+      "gender": "M",
+      "article": "a",
+      "literature_from": "",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 43,
+    "fields": {
+      "name": "Superman",
+      "gender": "M",
+      "article": "a",
+      "literature_from": "",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 44,
+    "fields": {
+      "name": "Supergirl",
+      "gender": "F",
+      "article": "a",
+      "literature_from": "",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 45,
+    "fields": {
+      "name": "Hulk",
+      "gender": "M",
+      "article": "a",
+      "literature_from": "",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 46,
+    "fields": {
+      "name": "Batman",
+      "gender": "M",
+      "article": "a",
+      "literature_from": "",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 47,
+    "fields": {
+      "name": "Black Canary",
+      "gender": "F",
+      "article": "a",
+      "literature_from": "",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 48,
+    "fields": {
+      "name": "Black Widow",
+      "gender": "F",
+      "article": "a",
+      "literature_from": "",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 49,
+    "fields": {
+      "name": "Black Panther",
+      "gender": "M",
+      "article": "a",
+      "literature_from": "",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 50,
+    "fields": {
+      "name": "Strom",
+      "gender": "F",
+      "article": "a",
+      "literature_from": "X-Men Series",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 51,
+    "fields": {
+      "name": "Iron Man",
+      "gender": "M",
+      "article": "an",
+      "literature_from": "",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 52,
+    "fields": {
+      "name": "Catwoman",
+      "gender": "F",
+      "article": "a",
+      "literature_from": "",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 53,
+    "fields": {
+      "name": "Deadpool",
+      "gender": "M",
+      "article": "a",
+      "literature_from": "",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 54,
+    "fields": {
+      "name": "Goku",
+      "gender": "M",
+      "article": "a",
+      "literature_from": "",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 55,
+    "fields": {
+      "name": "Green Arrow",
+      "gender": "M",
+      "article": "a",
+      "literature_from": "",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 56,
+    "fields": {
+      "name": "Professor X",
+      "gender": "M",
+      "article": "a",
+      "literature_from": "",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 57,
+    "fields": {
+      "name": "Wonder Woman",
+      "gender": "F",
+      "article": "a",
+      "literature_from": "",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 58,
+    "fields": {
+      "name": "Thor",
+      "gender": "M",
+      "article": "a",
+      "literature_from": "",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 59,
+    "fields": {
+      "name": "Naruto",
+      "gender": "M",
+      "article": "a",
+      "literature_from": "",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 60,
+    "fields": {
+      "name": "Uchiha Sasuke",
+      "gender": "M",
+      "article": "an",
+      "literature_from": "Naruto",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 61,
+    "fields": {
+      "name": "Sakura",
+      "gender": "F",
+      "article": "a",
+      "literature_from": "Naruto",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 62,
+    "fields": {
+      "name": "Tsunade",
+      "gender": "M",
+      "article": "a",
+      "literature_from": "Naruto",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 63,
+    "fields": {
+      "name": "Pain",
+      "gender": "M",
+      "article": "a",
+      "literature_from": "Naruto",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 64,
+    "fields": {
+      "name": "Uchiha Itachi",
+      "gender": "M",
+      "article": "an",
+      "literature_from": "Naruto",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 65,
+    "fields": {
+      "name": "Hataka Kakashi",
+      "gender": "M",
+      "article": "a",
+      "literature_from": "Naruto",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 66,
+    "fields": {
+      "name": "Gambit",
+      "gender": "M",
+      "article": "a",
+      "literature_from": "X-Men Series",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 67,
+    "fields": {
+      "name": "Green Lantern",
+      "gender": "M",
+      "article": "a",
+      "literature_from": "",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 68,
+    "fields": {
+      "name": "Invisible Woman",
+      "gender": "F",
+      "article": "an",
+      "literature_from": "Fantastic Four",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 69,
+    "fields": {
+      "name": "Katana",
+      "gender": "F",
+      "article": "a",
+      "literature_from": "Suicide Squad",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 70,
+    "fields": {
+      "name": "Jessica Jones",
+      "gender": "F",
+      "article": "a",
+      "literature_from": "",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 71,
+    "fields": {
+      "name": "Squirrel Girl",
+      "gender": "F",
+      "article": "a",
+      "literature_from": "New Warriors",
+      "desc": "the most powerful character in the Marvel universe, and unofficially one of the most fun girl superheros"
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 72,
+    "fields": {
+      "name": "Jean Grey",
+      "gender": "F",
+      "article": "a",
+      "literature_from": "X-Men Series",
+      "desc": ""
+    }
+  },
+  {
+    "model": "polls.superhero",
+    "pk": 73,
+    "fields": {
+      "name": "Rogue",
+      "gender": "F",
+      "article": "a",
+      "literature_from": "Marvel Comics",
+      "desc": ""
+    }
+  }
+]

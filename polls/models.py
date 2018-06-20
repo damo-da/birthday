@@ -20,24 +20,21 @@ GENDER_CHOICES = (
 )
 
 ARTICLE_CHOICES = (
-    ('A', 'A'),
-    ('An', 'An'),
-    ('The', 'The'),
+    ('a', 'a'),
+    ('an', 'an'),
+    ('the', 'the'),
 )
 
+
 class SuperHero(models.Model):
-    
-    
-    
-    def __str__(self):
-        return self.name
-        
-    
     name = models.CharField(max_length=200)
     gender = models.CharField(max_length=1, choices=GENDER_CHOICES, default='M')
     article = models.CharField(max_length=3, choices=ARTICLE_CHOICES)
     literature_from = models.CharField(max_length=200, blank=True, default='')
     desc = models.CharField(max_length=2000, blank=True, default='')
+    
+    def __str__(self):
+        return self.name
 
 
 class Person(models.Model):
@@ -49,3 +46,13 @@ class Person(models.Model):
     gender = models.CharField(max_length=1, choices=GENDER_CHOICES, default='M')
     w_number = models.CharField(max_length=8, blank=True, default='')
     birth_date = models.DateField()
+    
+    def __str__(self):
+        return self.name()
+    
+    def name(self):
+        if self.middle_name:
+            return '{} {} {}'.format(self.first_name, self.middle_name, self.last_name)
+        else:
+            return '{} {}'.format(self.first_name, self.last_name)
+

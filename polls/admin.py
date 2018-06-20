@@ -15,7 +15,8 @@
 from django.contrib import admin
 
 from .models import SuperHero, Person
+from .admin_models import SuperHeroAdmin, PersonAdmin
 
-admin.site.register(SuperHero)
-admin.site.register(Person)
+admin.site.register(Person, PersonAdmin)
+admin.site.register(SuperHero, SuperHeroAdmin)
 
