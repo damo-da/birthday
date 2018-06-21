@@ -36,6 +36,16 @@ class SuperHero(models.Model):
     def __str__(self):
         return self.name
 
+    def get_title(self):
+        ret = self.name
+
+        if self.literature_from:
+            ret += ' from ' + self.literature_from
+
+        if self.desc:
+            ret += ', ' + self.desc
+
+        return ret
 
 class Person(models.Model):
     hero = models.ForeignKey(SuperHero)

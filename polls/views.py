@@ -12,7 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 from __future__ import print_function
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
+from .models import Person, EmailMaster
+from .helpers.birthday_helper import get_template_params
 
 
 def index(request):
@@ -24,5 +26,10 @@ def test(request):
 
 
 def send_mail(request):
-    return HttpResponse('response')
+    person = Person.objects.first()
+
+    data = get_template_params(person)
+
+    return JsonResponse(data)
+
 
