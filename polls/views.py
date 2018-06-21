@@ -30,24 +30,35 @@ def test(request):
 
 
 def send_mail(request):
-    person = Person.objects.filter(first_name='Damodar').first()
-
     now = datetime.datetime.now()
-    if person.last_birthday_email_sent_on_year < now.year:
 
-        data = get_template_params(person)
+    todays_birthday_persons = Person.objects\
+        .filter(birth_date__month=now.month,
+                birth_date__day=now.day)\
+        .all()
 
-        template = render_to_string('polls/happy_birthday_email.html', data)
-
-        result = send_email('damodar.dahal@selu.edu', 'damodar.dahal@selu.edu', 'Happy birthday!', template)
-
-        person.last_birthday_email_sent_on_year = now.year
-        person.save()
-        log('Birthday email for {} was sent at {}'.format(person, now))
-        return HttpResponse(result)
+    if todays_birthday_persons.count() == 0:
+        return HttpResponse('no birthdays today')
     else:
-        log('Birthday email for this year for {} was already sent.'.format(person))
-        return HttpResponse('Birthday email already sent.')
+        print(todays_birthday_persons)
+        msg = ''
+        for person in todays_birthday_persons:
+            if person.last_birthday_email_sent_on_year < now.year:
+
+                data = get_template_params(person)
+
+                template = render_to_string('polls/happy_birthday_email.html', data)
+
+                result = send_email('damodar.dahal@selu.edu', 'damodar.dahal@selu.edu', 'Happy birthday!', template)
+
+                person.last_birthday_email_sent_on_year = now.year
+                person.save()
+                msg += 'Happy Birthday, {}! '.format(person)
+
+                log('Birthday email for {} was sent at {}. '.format(person, now))
+            else:
+                msg += 'Birthday email for a person was already sent. '.format(person)
+        return HttpResponse(msg)
 
 
 
