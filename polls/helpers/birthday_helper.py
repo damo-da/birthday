@@ -4,10 +4,8 @@ import random
 from polls.models import EmailMaster, SuperHero
 from mysite import settings
 
-print('reading pi...', end='')
-with open('data/pi.txt') as f:
-    pi = f.read()
-print('pi read')
+pi = None
+
 
 
 def number_of_days_since_birth(birth_date):
@@ -17,6 +15,13 @@ def number_of_days_since_birth(birth_date):
 
 
 def index_in_pi(number):
+    global pi
+    if pi is None:
+        print('reading pi...', end='')
+        with open('data/pi.txt') as f:
+            pi = f.read()
+        print('pi read')
+
     number = str(number)
     return pi.index(number) + 1
 
