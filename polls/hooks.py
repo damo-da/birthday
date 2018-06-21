@@ -9,7 +9,7 @@ from helpers.log import log
 def cb(sender, instance, *args, **kwargs):
     log('Saving {}'.format(str(instance)))
 
-    if instance.hero is not None and instance.hero.gender is not instance.gender:
+    if instance.hero is not None and instance.hero.gender != instance.gender:
         log('Hero is of the wrong gender. Removing hero.')
         instance.hero = None
 

@@ -7,6 +7,8 @@ def log(message, long_message=None, log_level=1):
 
     obj = Log(short=message, long=long_message, log_level=log_level)
 
+    print(obj.short)
+
     obj.save()
 
     return obj

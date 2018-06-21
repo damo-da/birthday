@@ -17,6 +17,8 @@ from django.template.loader import render_to_string
 from .models import Person
 from .helpers.birthday_helper import get_template_params
 from .helpers.email_helper import send_email
+import datetime
+from helpers.log import log
 
 
 def index(request):
@@ -30,12 +32,24 @@ def test(request):
 def send_mail(request):
     person = Person.objects.filter(first_name='Damodar').first()
 
-    data = get_template_params(person)
+    now = datetime.datetime.now()
+    if person.last_birthday_email_sent_on_year < now.year:
 
-    template = render_to_string('polls/happy_birthday_email.html', data)
+        data = get_template_params(person)
 
-    result = send_email('damodar.dahal@selu.edu', 'damodar.dahal@selu.edu', 'Happy birthday!', template)
+        template = render_to_string('polls/happy_birthday_email.html', data)
 
-    return HttpResponse(result)
+        result = send_email('damodar.dahal@selu.edu', 'damodar.dahal@selu.edu', 'Happy birthday!', template)
+
+        person.last_birthday_email_sent_on_year = now.year
+        person.save()
+        log('Birthday email for {} was sent at {}'.format(person, now))
+        return HttpResponse(result)
+    else:
+        log('Birthday email for this year for {} was already sent.'.format(person))
+        return HttpResponse('Birthday email already sent.')
+
+
+
 
 

@@ -60,6 +60,8 @@ class Person(models.Model):
     w_number = models.CharField(max_length=8, blank=True, default='')
     birth_date = models.DateField()
     email = models.EmailField(default='', blank=True)
+
+    last_birthday_email_sent_on_year = models.PositiveSmallIntegerField(blank=True, default=0)
     
     def __str__(self):
         return self.name()

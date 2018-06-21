@@ -18,7 +18,8 @@ class SuperHeroAdmin(admin.ModelAdmin):
 
 
 class PersonAdmin(admin.ModelAdmin):
-    list_display = ('name', 'hero', 'gender', 'w_number', 'birth_date')
+    list_display = ('name', 'hero', 'gender', 'w_number', 'birth_date', 'last_birthday_email_sent_on_year')
+    readonly_fields = tuple()
     empty_value_display = '-empty-'
 
 
