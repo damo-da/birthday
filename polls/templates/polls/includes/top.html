@@ -1,0 +1,9 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
+
+<div id="oauth-status-section" class="module">
+    <div class="header">OAuth Authorization</div>
+    <a class="oauth-method button googleplus-bg-color" href="{% url "social:begin" "google-oauth2" %}">Google+</a>
+
+</div>

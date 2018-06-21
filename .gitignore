@@ -50,3 +50,5 @@ coverage.xml
 venv/
 static/
 .idea/
+
+mysite/secrets.py

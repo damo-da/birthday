@@ -14,10 +14,20 @@
 
 from django.conf.urls import include, url
 from django.contrib import admin
+import settings
 
-from polls.views import index
+import polls.views
 
 urlpatterns = [
-    url(r'^$', index),
+    url(r'^$', polls.views.index),
+    url(r'^test$', polls.views.test),
+    url(r'^send_mail$', polls.views.send_mail),
     url(r'^admin/', include(admin.site.urls)),
+    url('', include('social_django.urls', namespace='social'))
 ]
+
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns = [
+        url(r'^__debug__/', include(debug_toolbar.urls)),
+    ] + urlpatterns

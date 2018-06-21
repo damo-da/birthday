@@ -21,3 +21,17 @@ class PersonAdmin(admin.ModelAdmin):
     list_display = ('name', 'hero', 'gender', 'w_number', 'birth_date')
     empty_value_display = '-empty-'
 
+
+class EmailMasterAdmin(admin.ModelAdmin):
+    list_display = ('given_name', 'display_name', 'email', 'updated_on')
+    readonly_fields = ('refresh_token', 'email')
+
+    def has_add_permission(self, request):
+        return False
+
+    def has_delete_permission(self, request, obj=None):
+        return True
+
+    def has_change_permission(self, request, obj=None):
+        return True
+

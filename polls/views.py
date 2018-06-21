@@ -11,10 +11,18 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
+from __future__ import print_function
 from django.http import HttpResponse
 
 
 def index(request):
     return HttpResponse("This site is no longer working. Bye.")
+
+
+def test(request):
+    return HttpResponse('test test')
+
+
+def send_mail(request):
+    return HttpResponse('response')
 

@@ -56,3 +56,14 @@ class Person(models.Model):
         else:
             return '{} {}'.format(self.first_name, self.last_name)
 
+
+class EmailMaster(models.Model):
+    given_name = models.CharField(max_length=200)
+    display_name = models.CharField(max_length=200)
+    email = models.EmailField()
+
+    refresh_token = models.TextField()
+    updated_on = models.DateField(auto_now_add=True)
+
+    def __str__(self):
+        return '{} <{}>'.format(self.display_name, self.email)
