@@ -14,6 +14,7 @@
 
 from django.db import models
 
+
 GENDER_CHOICES = (
     ('M', 'Male'),
     ('F', 'Female'),
@@ -34,6 +35,8 @@ class SuperHero(models.Model):
     desc = models.CharField(max_length=2000, blank=True, default='')
     
     def __str__(self):
+        if self.literature_from:
+            return '{} from {}'.format(self.name, self.literature_from)
         return self.name
 
     def get_title(self):
@@ -48,7 +51,7 @@ class SuperHero(models.Model):
         return ret
 
 class Person(models.Model):
-    hero = models.ForeignKey(SuperHero)
+    hero = models.ForeignKey(SuperHero, blank=True, null=True)
     
     first_name = models.CharField(max_length=200)
     middle_name = models.CharField(max_length=200, blank=True, default='')
@@ -56,6 +59,7 @@ class Person(models.Model):
     gender = models.CharField(max_length=1, choices=GENDER_CHOICES, default='M')
     w_number = models.CharField(max_length=8, blank=True, default='')
     birth_date = models.DateField()
+    email = models.EmailField(default='', blank=True)
     
     def __str__(self):
         return self.name()
@@ -66,11 +70,16 @@ class Person(models.Model):
         else:
             return '{} {}'.format(self.first_name, self.last_name)
 
+    @staticmethod
+    def pre_save(sender, instance, **kwargs):
+        print('pre saving')
+        pass
+
 
 class EmailMaster(models.Model):
     given_name = models.CharField(max_length=200)
     display_name = models.CharField(max_length=200)
-    email = models.EmailField()
+    email = models.EmailField(default='')
 
     refresh_token = models.TextField()
     updated_on = models.DateField(auto_now_add=True)

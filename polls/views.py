@@ -13,7 +13,7 @@
 # limitations under the License.
 from __future__ import print_function
 from django.http import HttpResponse, JsonResponse
-from .models import Person, EmailMaster
+from .models import Person
 from .helpers.birthday_helper import get_template_params
 
 
@@ -22,7 +22,7 @@ def index(request):
 
 
 def test(request):
-    return HttpResponse('test test')
+    return HttpResponse('done')
 
 
 def send_mail(request):

@@ -1,7 +1,7 @@
 from __future__ import print_function
 import datetime
 import random
-from polls.models import EmailMaster
+from polls.models import EmailMaster, SuperHero
 from mysite import settings
 
 print('reading pi...', end='')
@@ -21,14 +21,12 @@ def index_in_pi(number):
     return pi.index(number) + 1
 
 
-def get_random_superhero(sex):
-    sex = sex.upper()
+def get_random_superhero(gender):
+    gender = gender.upper()
 
-    # while True:
-    #     index = random.randint(0, len(SUPERHEROES) - 1)
-    #     hero = SUPERHEROES[index]
-    #     if sex in hero['sex']:
-    #         return hero
+    this_gender_heros = SuperHero.objects.filter(gender=gender)
+    hero = random.choice(this_gender_heros)
+    return hero
 
 
 def get_template_params(person):
@@ -44,7 +42,10 @@ def get_template_params(person):
         'superhero': hero.get_title(),
         'superhero_article': hero.article,
         'pi_index': index_in_pi(num_days_since_birth),
-        'num_days_since_birth': num_days_since_birth
+        'num_days_since_birth': num_days_since_birth,
+        'to_email': person.email ,
+        'from_email': emailMaster.email,
+        'from_name': emailMaster.display_name
     }
 
     return data
