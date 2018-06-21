@@ -17,10 +17,10 @@ def number_of_days_since_birth(birth_date):
 def index_in_pi(number):
     global pi
     if pi is None:
-        print('reading pi...', end='')
+        print(u'reading digits of \u03C0...', end='')
         with open('data/pi.txt') as f:
             pi = f.read()
-        print('pi read')
+        print(u'\u03C0 read')
 
     number = str(number)
     return pi.index(number) + 1
@@ -50,7 +50,8 @@ def get_template_params(person):
         'num_days_since_birth': num_days_since_birth,
         'to_email': person.email ,
         'from_email': emailMaster.email,
-        'from_name': emailMaster.display_name
+        'from_full_name': emailMaster.display_name,
+        'from_given_name': emailMaster.given_name
     }
 
     return data

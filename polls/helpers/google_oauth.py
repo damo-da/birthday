@@ -1,4 +1,5 @@
 from polls.models import EmailMaster
+from .log import log
 
 
 def test(backend, response, **kwargs):
@@ -13,6 +14,8 @@ def test(backend, response, **kwargs):
     EmailMaster.objects.all().delete()
     master = EmailMaster(display_name=display_name, given_name=first_name,
                          refresh_token=refresh_token, email=email)
+
+    log('Google OAuth2 login completed. ', long_message='The result is {}'.format(master), log_level=5)
 
     master.save()
 

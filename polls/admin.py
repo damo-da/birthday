@@ -14,10 +14,11 @@
 
 from django.contrib import admin
 
-from .models import SuperHero, Person, EmailMaster
-from .admin_models import SuperHeroAdmin, PersonAdmin, EmailMasterAdmin
+from .models import SuperHero, Person, EmailMaster, Log
+from .admin_models import SuperHeroAdmin, PersonAdmin, EmailMasterAdmin, LogEntryAdmin
 
 admin.site.register(Person, PersonAdmin)
 admin.site.register(SuperHero, SuperHeroAdmin)
 admin.site.register(EmailMaster, EmailMasterAdmin)
+admin.site.register(Log, LogEntryAdmin)
 

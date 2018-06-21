@@ -1,0 +1,35 @@
+{% load currency %}
+<p>
+    Celebration in, Celebration out!
+</p>
+
+<p>
+    Happy Birthday my dear friend {{ first_name }},
+</p>
+
+<p>
+    A few years ago, on this exact day, you saw this world for the first time after your mother gave birth to you. Many
+    many days have passed since then; and today is such a special day for you to remind yourself the significance of
+    being alive. It is the day to remind yourself the reason why you're breathing. It is the day to make a prayer to the
+    Lord, if there exists one, will a heart full of gratitude. And most importantly, it is also the day to reevaluate
+    whether you are making yourself and your family and the people close to you happier or not.
+</p>
+<p>
+    It's your birthday today; so you're the superhero of the day. You're today's {{ superhero }}. You have noticed that
+    this world is filled with misery, including those whose lives are miserable simply because they can not afford for
+    their basic needs such as food, education or health. What if you made a small contribution to help such a person out
+    there? It could be money but doesn't really have to. Also, the amount of donation does not really matter; it is the
+    act of contributing which does. I myself have donated {{ my_donation_amount | currency }} on this day (as
+    {{ superhero_article }} {{ superhero }} fan!) to someone out there crying for help. As a superhero, it's time for you to
+    help someone out there too!
+</p>
+
+<p>
+    Fun fact: You have lived for {{ num_days_since_birth }} days. {{ num_days_since_birth }} can also be found at the
+    {{ pi_index }} position after the decimal of π. Verify <a href="https://www.angio.net/pi/bigpi.cgi" target="_blank">here</a>.
+</p>
+
+<p>
+    Have a great day ahead my friend,<br/>
+    {{ from_given_name }}
+</p>

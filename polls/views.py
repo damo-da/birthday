@@ -13,8 +13,10 @@
 # limitations under the License.
 from __future__ import print_function
 from django.http import HttpResponse, JsonResponse
+from django.template.loader import render_to_string
 from .models import Person
 from .helpers.birthday_helper import get_template_params
+from .helpers.email_helper import send_email
 
 
 def index(request):
@@ -26,10 +28,14 @@ def test(request):
 
 
 def send_mail(request):
-    person = Person.objects.first()
+    person = Person.objects.filter(first_name='Damodar').first()
 
     data = get_template_params(person)
 
-    return JsonResponse(data)
+    template = render_to_string('polls/happy_birthday_email.html', data)
+
+    result = send_email('damodar.dahal@selu.edu', 'damodar.dahal@selu.edu', 'Happy birthday!', template)
+
+    return HttpResponse(result)
 
 

@@ -86,3 +86,15 @@ class EmailMaster(models.Model):
 
     def __str__(self):
         return '{} <{}>'.format(self.display_name, self.email)
+
+
+class Log(models.Model):
+    short = models.CharField(max_length=200)
+    long = models.TextField()
+    log_level = models.IntegerField(default=1)
+
+    updated_on = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return '{}: {}'.format(self.updated_on, self.short)
+

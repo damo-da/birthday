@@ -35,3 +35,21 @@ class EmailMasterAdmin(admin.ModelAdmin):
     def has_change_permission(self, request, obj=None):
         return True
 
+
+class LogEntryAdmin(admin.ModelAdmin):
+    readonly_fields = ('short',
+                       'long',
+                       'updated_on', 'log_level')
+    list_display = ('short', 'log_level', 'updated_on')
+
+    def has_delete_permission(self, request, obj=None):
+        return False
+
+    def has_add_permission(self, request):
+        return False
+
+    def get_actions(self, request):
+        actions = super(LogEntryAdmin, self).get_actions(request)
+        del actions['delete_selected']
+        return actions
+
