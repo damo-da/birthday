@@ -33,3 +33,6 @@ libraries:
 - name: MySQLdb
   version: 1.2.5
 # [END django_app]
+
+skip_files:
+- venv/

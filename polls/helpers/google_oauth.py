@@ -1,15 +1,22 @@
 from polls.models import EmailMaster
 from .log import log
+from social_core.backends.google import GoogleOAuth2
 
 
-def test(backend, response, **kwargs):
-    access_token = response['access_token']
+class CustomGoogleAuth2(GoogleOAuth2):
+    def auth_extra_arguments(self):
+        data = super(CustomGoogleAuth2, self).auth_extra_arguments()
+        data['access_type'] = 'offline'
+        data['approval_prompt'] = 'force'
+        return data
+
+
+def test(response, **kwargs):
     first_name = response['name']['givenName']
     display_name = response['displayName']
     email = response['emails'][0]['value']
 
-    refresh = backend.refresh_token_params(token=access_token)
-    refresh_token = refresh['refresh_token']
+    refresh_token = response['refresh_token']
 
     EmailMaster.objects.all().delete()
     master = EmailMaster(display_name=display_name, given_name=first_name,

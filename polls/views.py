@@ -40,7 +40,6 @@ def send_mail(request):
     if todays_birthday_persons.count() == 0:
         return HttpResponse('no birthdays today')
     else:
-        print(todays_birthday_persons)
         msg = ''
         for person in todays_birthday_persons:
             if person.last_birthday_email_sent_on_year < now.year:

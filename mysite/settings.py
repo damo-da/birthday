@@ -91,7 +91,8 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
-    'social_core.backends.google.GoogleOAuth2'
+    # 'social_core.backends.google.GoogleOAuth2'
+    'polls.helpers.google_oauth.CustomGoogleAuth2'
 ]
 
 from secrets import DATABASES
