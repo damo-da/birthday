@@ -1,0 +1,16 @@
+cron:
+- description: "send happy birthday email"
+  timezone: America/Chicago
+  url: /send_birthday_emails
+  target: beta
+  schedule: every day 00:01
+- description: "send happy birthday email 2"
+  timezone: America/Chicago
+  url: /send_birthday_emails
+  target: beta
+  schedule: every day 01:01
+- description: "send happy birthday email 3"
+  timezone: America/Chicago
+  url: /send_birthday_emails
+  target: beta
+  schedule: every day 06:01

@@ -21,7 +21,7 @@ import polls.views
 urlpatterns = [
     url(r'^$', polls.views.index),
     url(r'^test$', polls.views.test),
-    url(r'^send_mail$', polls.views.send_mail),
+    url(r'^send_birthday_emails', polls.views.send_birthday_emails),
     url(r'^admin/', include(admin.site.urls)),
     url('', include('social_django.urls', namespace='social'))
 ]

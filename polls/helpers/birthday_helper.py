@@ -1,4 +1,7 @@
 from __future__ import print_function
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 import datetime
 import random
 from polls.models import EmailMaster, SuperHero

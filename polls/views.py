@@ -29,7 +29,7 @@ def test(request):
     return HttpResponse('done')
 
 
-def send_mail(request):
+def send_birthday_emails(request):
     now = datetime.datetime.now()
 
     todays_birthday_persons = Person.objects\

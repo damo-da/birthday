@@ -32,7 +32,12 @@ handlers:
 libraries:
 - name: MySQLdb
   version: 1.2.5
+- name: ssl
+  version: latest
 # [END django_app]
+
+env_variables:
+  GAE_USE_SOCKETS_HTTPLIB : 'true'
 
 skip_files:
 - ^venv$
