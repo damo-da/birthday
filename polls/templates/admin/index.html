@@ -41,11 +41,6 @@
                 <td>&nbsp;</td>
             {% endif %}
             
-            {% if model.object_name == 'SuperHero' %}
-              <td><a href="{{ model.reset_heroes }}" class="reset">{% trans 'Reset' %}</a></td>
-            {% else %}
-                <td>&nbsp;</td>
-            {% endif %}
             </tr>
         {% endfor %}
         </table>
