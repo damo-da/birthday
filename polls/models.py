@@ -14,7 +14,6 @@
 
 from django.db import models
 
-
 GENDER_CHOICES = (
     ('M', 'Male'),
     ('F', 'Female'),
@@ -33,7 +32,7 @@ class SuperHero(models.Model):
     article = models.CharField(max_length=3, choices=ARTICLE_CHOICES)
     literature_from = models.CharField(max_length=200, blank=True, default='')
     desc = models.CharField(max_length=2000, blank=True, default='')
-    
+
     def __str__(self):
         if self.literature_from:
             return '{} from {}'.format(self.name, self.literature_from)
@@ -50,9 +49,10 @@ class SuperHero(models.Model):
 
         return ret
 
+
 class Person(models.Model):
     hero = models.ForeignKey(SuperHero, blank=True, null=True)
-    
+
     first_name = models.CharField(max_length=200)
     middle_name = models.CharField(max_length=200, blank=True, default='')
     last_name = models.CharField(max_length=200)
@@ -62,10 +62,16 @@ class Person(models.Model):
     email = models.EmailField(default='', blank=True)
 
     last_birthday_email_sent_on_year = models.PositiveSmallIntegerField(blank=True, default=0)
-    
+
     def __str__(self):
-        return self.name()
-    
+        return self.name
+
+    def birthday(self):
+        pass
+        # return '{0:02d}-{1:02d}'.format(self.birth_date.month, self.birth_date.day)
+    birthday.admin_order_field = 'birthday'
+
+    @property
     def name(self):
         if self.middle_name:
             return '{} {} {}'.format(self.first_name, self.middle_name, self.last_name)
@@ -99,4 +105,3 @@ class Log(models.Model):
 
     def __str__(self):
         return '{}: {}'.format(self.updated_on, self.short)
-

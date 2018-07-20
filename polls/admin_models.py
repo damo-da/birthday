@@ -18,9 +18,25 @@ class SuperHeroAdmin(admin.ModelAdmin):
 
 
 class PersonAdmin(admin.ModelAdmin):
-    list_display = ('name', 'hero', 'gender', 'w_number', 'birth_date', 'last_birthday_email_sent_on_year')
+    list_display = ('full_name', 'hero', 'gender', 'w_number', 'birth_date', 'birthday',
+                    'last_birthday_email_sent_on_year')
     readonly_fields = tuple()
     empty_value_display = '-empty-'
+
+    def get_queryset(self, request):
+        qs = super(PersonAdmin, self).get_queryset(request)
+
+        qs = qs.extra(select={
+            'birthday': 'DATE_FORMAT(birth_date,"%%m-%%d")'
+        })
+
+        return qs
+
+    def full_name(self, obj):
+        return obj.name
+
+    full_name.admin_order_field = 'first_name'
+
 
 
 class EmailMasterAdmin(admin.ModelAdmin):
