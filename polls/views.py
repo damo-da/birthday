@@ -51,9 +51,10 @@ def send_birthday_emails(request):
                 data = get_template_params(person)
 
                 template = render_to_string('polls/happy_birthday_email.html', data)
-                send_email(admin.email, person.email, '', 'Happy birthday!', template)
 
-                send_email(admin.email, admin.email, '', 'BIRTHDAY: {} on {}'.format(person, person.birth_date), '')
+                send_email(admin.email, person.email, 'Happy birthday!', template)
+
+                send_email(admin.email, admin.email, 'BIRTHDAY: {} on {}'.format(person, person.birth_date), '')
 
                 person.last_birthday_email_sent_on_year = now.year
                 person.save()
