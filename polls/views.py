@@ -14,7 +14,7 @@
 from __future__ import print_function
 from django.http import HttpResponse, JsonResponse
 from django.template.loader import render_to_string
-from .models import Person
+from .models import Person, EmailMaster
 from .helpers.birthday_helper import get_template_params
 from .helpers.email_helper import send_email
 import datetime
@@ -41,8 +41,9 @@ def send_birthday_emails(request):
         .all()
 
     if todays_birthday_persons.count() == 0:
-        return HttpResponse('no birthdays today')
+        return HttpResponse('no birthdays today.')
     else:
+        admin = EmailMaster.objects.first()
         msg = ''
         for person in todays_birthday_persons:
             if person.last_birthday_email_sent_on_year < now.year:
@@ -50,8 +51,9 @@ def send_birthday_emails(request):
                 data = get_template_params(person)
 
                 template = render_to_string('polls/happy_birthday_email.html', data)
+                send_email(admin.email, person.email, '', 'Happy birthday!', template)
 
-                result = send_email('damodar.dahal@selu.edu', 'damodar.dahal@selu.edu', 'Happy birthday!', template)
+                send_email(admin.email, admin.email, '', 'BIRTHDAY: {} on {}'.format(person, person.birth_date), '')
 
                 person.last_birthday_email_sent_on_year = now.year
                 person.save()
@@ -59,7 +61,7 @@ def send_birthday_emails(request):
 
                 log('Birthday email for {} was sent at {}. '.format(person, now))
             else:
-                msg += 'Birthday email for a person was already sent. '.format(person)
+                msg += 'Birthday email for a person was already sent. <br />'.format(person)
         return HttpResponse(msg)
 
 

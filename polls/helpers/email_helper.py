@@ -37,13 +37,15 @@ def CreateMessageHtml(sender, to, subject, msgHtml):
     msg = MIMEMultipart('alternative')
     msg['Subject'] = subject
     msg['From'] = sender
-    msg['To'] = to
+
+    msg['To'] = ', '.join(to) if isinstance(to, list) else to
+
     # msg.attach(MIMEText(msgPlain, 'plain'))
     msg.attach(MIMEText(msgHtml, 'html', _charset='utf-8'))
     return {'raw': base64.urlsafe_b64encode(msg.as_string())}
 
 
-def send_email(sender, to, subject, msgHtml):
+def send_email(sender, to, cc, subject, msgHtml):
     message = 'Sending email from {} to {}...'.format(sender, to)
     log(message, log_level=2)
 
@@ -52,7 +54,7 @@ def send_email(sender, to, subject, msgHtml):
 
     service = discovery.build('gmail', 'v1', http=http)
 
-    message1 = CreateMessageHtml(sender, to, subject, msgHtml)
+    message1 = CreateMessageHtml(sender, to, cc, subject, msgHtml)
 
     result = SendMessageInternal(service, "me", message1)
 

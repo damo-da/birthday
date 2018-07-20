@@ -1,32 +1,36 @@
 {% load currency %}
 <p>
-    Celebration in, Celebration out!
-</p>
-
-<p>
     Happy Birthday my dear friend {{ first_name }},
 </p>
 
 <p>
-    A few years ago, on this exact day, you saw this world for the first time after your mother gave birth to you. Many
-    many days have passed since then; and today is such a special day for you to remind yourself the significance of
-    being alive. It is the day to remind yourself the reason why you're breathing. It is the day to make a prayer to the
-    Lord, if there exists one, will a heart full of gratitude. And most importantly, it is also the day to reevaluate
-    whether you are making yourself and your family and the people close to you happier or not.
+    On this exact month and this exact day of the year {{ birth_year }}, you saw this world for the first time. Many
+    days have passed since then; but today is auspicious for you to once again revisit the fundamentals. <em>Why</em> do
+    you exist? Or better yet, <em>how</em> can you exist? If the universe had a beginning, and even time had a
+    beginning, what are those that existed outside and before? Or does that make no sense? What does it even mean "to
+    exist"? All humans are complicated; but, are we really? Are you complicated? Do you understand yourself? What are
+    you made up of? What is your <em>true</em> age? What's the difference between you and a computer?
 </p>
 <p>
-    It's your birthday today; so you're the superhero of the day. You're today's {{ superhero }}. You have noticed that
-    this world is filled with misery, including those whose lives are miserable simply because they can not afford for
-    their basic needs such as food, education or health. What if you made a small contribution to help such a person out
-    there? It could be money but doesn't really have to. Also, the amount of donation does not really matter; it is the
-    act of contributing which does. I myself have donated {{ my_donation_amount | currency }} on this day (as
-    {{ superhero_article }} {{ superhero }} fan!) to someone out there crying for help. As a superhero, it's time for you to
-    help someone out there too!
+    My friend, today is a vital day for you. It signifies that your life had a beginning, and will ultimately perish.
+    Take a break from regular activities to look at it from a new perspective. You might discover something significant
+    about yourself. And after you've spent the day pondering about all that exists, it is time to celebrate existence.
+    With cake, friends and families, and lots of love. (maybe a little bit of booze too? Well, if you get some, don't
+    forget to invite me to the party!)
+</p>
+<p>
+    It's your birthday today; so you're <em>{{ superhero }}</em> for the next 24 hours. You have noticed that this world
+    is filled with misery, including those whose lives are miserable simply because they can not afford for their basic
+    needs such as food, education or health. What if you made a small contribution to help such a person out there? It
+    could be money but doesn't really have to. Also, the amount of donation does not really matter; it is just the act
+    of contributing which does. I myself have donated {{ my_donation_amount | currency }} on this day (as {{
+    superhero_article }} {{ superhero }} fan!) to someone out there crying for help. As a superhero, it's time for you
+    to help someone out there too!
 </p>
 
 <p>
     Fun fact: You have lived for {{ num_days_since_birth }} days. {{ num_days_since_birth }} can also be found at the
-    {{ pi_index }} position after the decimal of π. Verify <a href="https://www.angio.net/pi/bigpi.cgi" target="_blank">here</a>.
+    {{ pi_index }} digit of π. Verify <a href="https://www.angio.net/pi/bigpi.cgi" target="_blank">here</a>.
 </p>
 
 <p>

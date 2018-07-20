@@ -6,6 +6,8 @@ import datetime
 import random
 from polls.models import EmailMaster, SuperHero
 from mysite import settings
+from django.contrib.humanize.templatetags.humanize import ordinal
+
 
 pi = None
 
@@ -26,7 +28,8 @@ def index_in_pi(number):
         print(u'\u03C0 read')
 
     number = str(number)
-    return pi.index(number) + 1
+    index = pi.index(number) + 1
+    return ordinal(index)
 
 
 def get_random_superhero(gender):
@@ -45,7 +48,8 @@ def get_template_params(person):
 
     data = {
         'first_name': person.first_name,
-        'full_name': person.name(),
+        'full_name': person.name,
+        'birth_year': person.birth_date.year,
         'my_donation_amount': settings.DONATION_AMOUNT,
         'superhero': hero.get_title(),
         'superhero_article': hero.article,
