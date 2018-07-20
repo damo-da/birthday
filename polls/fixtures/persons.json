@@ -1,510 +1,167 @@
 [
   {
-    "model": "polls.superhero",
-    "pk": 38,
+    "model": "polls.person",
+    "pk": 1,
     "fields": {
-      "name": "Captain America",
+      "hero": 39,
+      "first_name": "Aadhar",
+      "middle_name": "",
+      "last_name": "Prasai",
       "gender": "M",
-      "article": "a",
-      "literature_from": "",
-      "desc": ""
+      "w_number": "676244",
+      "birth_date": "1997-09-27",
+      "email": "w0676244@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
-    "model": "polls.superhero",
-    "pk": 39,
+    "model": "polls.person",
+    "pk": 2,
     "fields": {
-      "name": "Dr. Strange",
+      "hero": 51,
+      "first_name": "Aagya",
+      "middle_name": "",
+      "last_name": "Dhakal",
       "gender": "M",
-      "article": "a",
-      "literature_from": "",
-      "desc": ""
+      "w_number": "659429",
+      "birth_date": "1997-09-11",
+      "email": "w0659429@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
-    "model": "polls.superhero",
-    "pk": 40,
+    "model": "polls.person",
+    "pk": 3,
     "fields": {
-      "name": "Ghost Rider",
+      "hero": 64,
+      "first_name": "Aakash",
+      "middle_name": "",
+      "last_name": "Amatya",
       "gender": "M",
-      "article": "a",
-      "literature_from": "",
-      "desc": ""
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 41,
-    "fields": {
-      "name": "Wolverine",
-      "gender": "M",
-      "article": "a",
-      "literature_from": "",
-      "desc": ""
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 42,
-    "fields": {
-      "name": "Spiderman",
-      "gender": "M",
-      "article": "a",
-      "literature_from": "",
-      "desc": ""
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 43,
-    "fields": {
-      "name": "Superman",
-      "gender": "M",
-      "article": "a",
-      "literature_from": "",
-      "desc": ""
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 44,
-    "fields": {
-      "name": "Supergirl",
-      "gender": "F",
-      "article": "a",
-      "literature_from": "",
-      "desc": ""
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 45,
-    "fields": {
-      "name": "Hulk",
-      "gender": "M",
-      "article": "a",
-      "literature_from": "",
-      "desc": ""
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 46,
-    "fields": {
-      "name": "Batman",
-      "gender": "M",
-      "article": "a",
-      "literature_from": "",
-      "desc": ""
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 47,
-    "fields": {
-      "name": "Black Canary",
-      "gender": "F",
-      "article": "a",
-      "literature_from": "",
-      "desc": ""
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 48,
-    "fields": {
-      "name": "Black Widow",
-      "gender": "F",
-      "article": "a",
-      "literature_from": "",
-      "desc": ""
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 49,
-    "fields": {
-      "name": "Black Panther",
-      "gender": "M",
-      "article": "a",
-      "literature_from": "",
-      "desc": ""
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 50,
-    "fields": {
-      "name": "Strom",
-      "gender": "F",
-      "article": "a",
-      "literature_from": "X-Men Series",
-      "desc": ""
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 51,
-    "fields": {
-      "name": "Iron Man",
-      "gender": "M",
-      "article": "an",
-      "literature_from": "",
-      "desc": ""
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 52,
-    "fields": {
-      "name": "Catwoman",
-      "gender": "F",
-      "article": "a",
-      "literature_from": "",
-      "desc": ""
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 53,
-    "fields": {
-      "name": "Deadpool",
-      "gender": "M",
-      "article": "a",
-      "literature_from": "",
-      "desc": ""
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 54,
-    "fields": {
-      "name": "Goku",
-      "gender": "M",
-      "article": "a",
-      "literature_from": "",
-      "desc": ""
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 55,
-    "fields": {
-      "name": "Green Arrow",
-      "gender": "M",
-      "article": "a",
-      "literature_from": "",
-      "desc": ""
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 56,
-    "fields": {
-      "name": "Professor X",
-      "gender": "M",
-      "article": "a",
-      "literature_from": "",
-      "desc": ""
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 57,
-    "fields": {
-      "name": "Wonder Woman",
-      "gender": "F",
-      "article": "a",
-      "literature_from": "",
-      "desc": ""
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 58,
-    "fields": {
-      "name": "Thor",
-      "gender": "M",
-      "article": "a",
-      "literature_from": "",
-      "desc": ""
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 59,
-    "fields": {
-      "name": "Naruto",
-      "gender": "M",
-      "article": "a",
-      "literature_from": "",
-      "desc": ""
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 60,
-    "fields": {
-      "name": "Uchiha Sasuke",
-      "gender": "M",
-      "article": "an",
-      "literature_from": "Naruto",
-      "desc": ""
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 61,
-    "fields": {
-      "name": "Sakura",
-      "gender": "F",
-      "article": "a",
-      "literature_from": "Naruto",
-      "desc": ""
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 62,
-    "fields": {
-      "name": "Tsunade",
-      "gender": "M",
-      "article": "a",
-      "literature_from": "Naruto",
-      "desc": ""
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 63,
-    "fields": {
-      "name": "Pain",
-      "gender": "M",
-      "article": "a",
-      "literature_from": "Naruto",
-      "desc": ""
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 64,
-    "fields": {
-      "name": "Uchiha Itachi",
-      "gender": "M",
-      "article": "an",
-      "literature_from": "Naruto",
-      "desc": ""
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 65,
-    "fields": {
-      "name": "Hataka Kakashi",
-      "gender": "M",
-      "article": "a",
-      "literature_from": "Naruto",
-      "desc": ""
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 66,
-    "fields": {
-      "name": "Gambit",
-      "gender": "M",
-      "article": "a",
-      "literature_from": "X-Men Series",
-      "desc": ""
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 67,
-    "fields": {
-      "name": "Green Lantern",
-      "gender": "M",
-      "article": "a",
-      "literature_from": "",
-      "desc": ""
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 68,
-    "fields": {
-      "name": "Invisible Woman",
-      "gender": "F",
-      "article": "an",
-      "literature_from": "Fantastic Four",
-      "desc": ""
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 69,
-    "fields": {
-      "name": "Katana",
-      "gender": "F",
-      "article": "a",
-      "literature_from": "Suicide Squad",
-      "desc": ""
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 70,
-    "fields": {
-      "name": "Jessica Jones",
-      "gender": "F",
-      "article": "a",
-      "literature_from": "",
-      "desc": ""
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 71,
-    "fields": {
-      "name": "Squirrel Girl",
-      "gender": "F",
-      "article": "a",
-      "literature_from": "New Warriors",
-      "desc": "the most powerful character in the Marvel universe, and unofficially one of the most fun girl superheros"
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 72,
-    "fields": {
-      "name": "Jean Grey",
-      "gender": "F",
-      "article": "a",
-      "literature_from": "X-Men Series",
-      "desc": ""
-    }
-  },
-  {
-    "model": "polls.superhero",
-    "pk": 73,
-    "fields": {
-      "name": "Rogue",
-      "gender": "F",
-      "article": "a",
-      "literature_from": "Marvel Comics",
-      "desc": ""
+      "w_number": "676240",
+      "birth_date": "1998-12-18",
+      "email": "w0676240@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
     "model": "polls.person",
     "pk": 4,
     "fields": {
-      "hero": 69,
-      "first_name": "Aagya",
+      "hero": 47,
+      "first_name": "Aakriti",
       "middle_name": "",
-      "last_name": "Dhakal",
+      "last_name": "Thapa",
       "gender": "F",
-      "w_number": "659429",
-      "birth_date": "1997-09-11",
-      "email": "w0659429@selu.edu"
+      "w_number": "676830",
+      "birth_date": "1997-09-07",
+      "email": "w0676830@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
     "model": "polls.person",
     "pk": 5,
     "fields": {
-      "hero": 71,
-      "first_name": "Aakriti",
+      "hero": 45,
+      "first_name": "Aayush",
       "middle_name": "",
-      "last_name": "Shrestha",
-      "gender": "F",
-      "w_number": "651378",
-      "birth_date": "1989-12-17",
-      "email": "w0651378@selu.edu"
+      "last_name": "Dahal",
+      "gender": "M",
+      "w_number": "573113",
+      "birth_date": "1995-09-07",
+      "email": "w0573113@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
     "model": "polls.person",
     "pk": 6,
     "fields": {
-      "hero": 57,
-      "first_name": "Abiral",
+      "hero": 54,
+      "first_name": "Abhishek",
       "middle_name": "",
-      "last_name": "Bhattarai",
-      "gender": "F",
-      "w_number": "581342",
-      "birth_date": "1994-09-06",
-      "email": "w0581342@selu.edu"
+      "last_name": "Karanjit",
+      "gender": "M",
+      "w_number": "676245",
+      "birth_date": "1997-07-25",
+      "email": "w0676245@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
     "model": "polls.person",
     "pk": 7,
     "fields": {
-      "hero": 60,
-      "first_name": "Anish",
+      "hero": 54,
+      "first_name": "Abhishek",
       "middle_name": "",
-      "last_name": "Manandhar",
+      "last_name": "Regmi",
       "gender": "M",
-      "w_number": "658737",
-      "birth_date": "1996-11-27",
-      "email": "w0658737@selu.edu"
+      "w_number": "676247",
+      "birth_date": "1997-04-21",
+      "email": "w0676247@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
     "model": "polls.person",
     "pk": 8,
     "fields": {
-      "hero": 53,
-      "first_name": "Ashish",
+      "hero": 59,
+      "first_name": "Abiral",
       "middle_name": "",
-      "last_name": "Karanjit",
+      "last_name": "Bhattarai",
       "gender": "M",
-      "w_number": "571124",
-      "birth_date": "1994-08-22",
-      "email": "w0571124@selu.edu"
+      "w_number": "581342",
+      "birth_date": "1994-09-06",
+      "email": "w0581342@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
     "model": "polls.person",
     "pk": 9,
     "fields": {
-      "hero": 42,
-      "first_name": "Avaya",
+      "hero": 51,
+      "first_name": "Alish",
       "middle_name": "",
-      "last_name": "Dhakal",
+      "last_name": "Dhamala",
       "gender": "M",
-      "w_number": "656919",
-      "birth_date": "1996-09-24",
-      "email": "w0656919@selu.edu"
+      "w_number": "675205",
+      "birth_date": "1998-01-29",
+      "email": "w0675205@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
     "model": "polls.person",
     "pk": 10,
     "fields": {
-      "hero": 39,
-      "first_name": "Bibesh",
+      "hero": 66,
+      "first_name": "Anish",
       "middle_name": "",
-      "last_name": "Kc",
+      "last_name": "Manandhar",
       "gender": "M",
-      "w_number": "661041",
-      "birth_date": "1997-08-12",
-      "email": "w0661041@selu.edu"
+      "w_number": "658737",
+      "birth_date": "1996-11-27",
+      "email": "w0658737@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
     "model": "polls.person",
     "pk": 11,
     "fields": {
-      "hero": 49,
-      "first_name": "Bikash",
+      "hero": 66,
+      "first_name": "Anup",
       "middle_name": "",
-      "last_name": "Subedi",
+      "last_name": "Ghimire",
       "gender": "M",
-      "w_number": "660658",
-      "birth_date": "1997-05-18",
-      "email": "w0660658@selu.edu"
+      "w_number": "523042",
+      "birth_date": "1993-02-10",
+      "email": "w0523042@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
@@ -512,32 +169,334 @@
     "pk": 12,
     "fields": {
       "hero": 61,
-      "first_name": "Binisha",
+      "first_name": "Anusha",
       "middle_name": "",
-      "last_name": "Karki",
+      "last_name": "Khadka",
       "gender": "F",
-      "w_number": "642579",
-      "birth_date": "1994-06-25",
-      "email": "w0642579@selu.edu"
+      "w_number": "678459",
+      "birth_date": "1999-01-29",
+      "email": "w0678459@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
     "model": "polls.person",
     "pk": 13,
     "fields": {
+      "hero": 48,
+      "first_name": "Anusha",
+      "middle_name": "",
+      "last_name": "Puri",
+      "gender": "F",
+      "w_number": "675122",
+      "birth_date": "1999-06-02",
+      "email": "w0675122@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 14,
+    "fields": {
+      "hero": 63,
+      "first_name": "Apurba",
+      "middle_name": "",
+      "last_name": "Adhikary",
+      "gender": "M",
+      "w_number": "548863",
+      "birth_date": "1993-12-07",
+      "email": "w0548863@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 15,
+    "fields": {
+      "hero": 44,
+      "first_name": "Archana",
+      "middle_name": "",
+      "last_name": "Kharel",
+      "gender": "F",
+      "w_number": "676832",
+      "birth_date": "1998-04-05",
+      "email": "w0676832@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 16,
+    "fields": {
+      "hero": 67,
+      "first_name": "Ashish",
+      "middle_name": "",
+      "last_name": "Karanjit",
+      "gender": "M",
+      "w_number": "571124",
+      "birth_date": "1994-08-22",
+      "email": "w0571124@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 17,
+    "fields": {
       "hero": 54,
+      "first_name": "Ashish",
+      "middle_name": "",
+      "last_name": "Khanal",
+      "gender": "M",
+      "w_number": "675109",
+      "birth_date": "1999-05-13",
+      "email": "w0675109@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 18,
+    "fields": {
+      "hero": 54,
+      "first_name": "Avash",
+      "middle_name": "",
+      "last_name": "Mishra",
+      "gender": "M",
+      "w_number": "677931",
+      "birth_date": "1998-05-02",
+      "email": "w0677931@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 19,
+    "fields": {
+      "hero": 63,
+      "first_name": "Avaya",
+      "middle_name": "",
+      "last_name": "Dhakal",
+      "gender": "M",
+      "w_number": "656919",
+      "birth_date": "1996-09-24",
+      "email": "w0656919@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 20,
+    "fields": {
+      "hero": 49,
+      "first_name": "Basanta",
+      "middle_name": "",
+      "last_name": "Khakurel",
+      "gender": "M",
+      "w_number": "675115",
+      "birth_date": "1998-07-25",
+      "email": "w0675115@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 21,
+    "fields": {
+      "hero": 59,
+      "first_name": "Bibek",
+      "middle_name": "",
+      "last_name": "Bastola",
+      "gender": "M",
+      "w_number": "677115",
+      "birth_date": "1997-10-06",
+      "email": "w0677115@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 22,
+    "fields": {
+      "hero": 65,
+      "first_name": "Bibek",
+      "middle_name": "",
+      "last_name": "Dahal",
+      "gender": "M",
+      "w_number": "678471",
+      "birth_date": "1998-01-19",
+      "email": "w0678471@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 23,
+    "fields": {
+      "hero": 49,
+      "first_name": "Bibek",
+      "middle_name": "",
+      "last_name": "Gautam",
+      "gender": "M",
+      "w_number": "554322",
+      "birth_date": "1993-12-20",
+      "email": "w0554322@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 24,
+    "fields": {
+      "hero": 56,
+      "first_name": "Bibesh",
+      "middle_name": "",
+      "last_name": "Kc",
+      "gender": "M",
+      "w_number": "661041",
+      "birth_date": "1997-08-12",
+      "email": "w0661041@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 25,
+    "fields": {
+      "hero": 39,
+      "first_name": "Bibidh",
+      "middle_name": "",
+      "last_name": "Bista",
+      "gender": "M",
+      "w_number": "548388",
+      "birth_date": "1996-01-04",
+      "email": "w0548388@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 26,
+    "fields": {
+      "hero": 51,
+      "first_name": "Bikash",
+      "middle_name": "",
+      "last_name": "Subedi",
+      "gender": "M",
+      "w_number": "660658",
+      "birth_date": "1997-05-18",
+      "email": "w0660658@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 27,
+    "fields": {
+      "hero": 44,
+      "first_name": "Binisha",
+      "middle_name": "",
+      "last_name": "Karki",
+      "gender": "F",
+      "w_number": "642579",
+      "birth_date": "1994-06-25",
+      "email": "w0642579@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 28,
+    "fields": {
+      "hero": 45,
+      "first_name": "Biraj",
+      "middle_name": "",
+      "last_name": "Basnet",
+      "gender": "M",
+      "w_number": "675207",
+      "birth_date": "1998-07-27",
+      "email": "w0675207@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 29,
+    "fields": {
+      "hero": 38,
+      "first_name": "Biraj",
+      "middle_name": "",
+      "last_name": "Tiwari",
+      "gender": "M",
+      "w_number": "683692",
+      "birth_date": "1998-07-17",
+      "email": "w0683692@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 30,
+    "fields": {
+      "hero": 38,
       "first_name": "Birat",
       "middle_name": "",
       "last_name": "Lamichhane",
       "gender": "M",
       "w_number": "659951",
       "birth_date": "1998-01-18",
-      "email": "w0659951@selu.edu"
+      "email": "w0659951@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
     "model": "polls.person",
-    "pk": 14,
+    "pk": 31,
+    "fields": {
+      "hero": 62,
+      "first_name": "Bisheshwor",
+      "middle_name": "",
+      "last_name": "Ghimire",
+      "gender": "M",
+      "w_number": "676844",
+      "birth_date": "1997-03-01",
+      "email": "w0676844@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 32,
+    "fields": {
+      "hero": 56,
+      "first_name": "Bishwa",
+      "middle_name": "",
+      "last_name": "Bista",
+      "gender": "M",
+      "w_number": "659949",
+      "birth_date": "1999-07-17",
+      "email": "w0659949@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 33,
+    "fields": {
+      "hero": 73,
+      "first_name": "Chandani",
+      "middle_name": "",
+      "last_name": "Gurung",
+      "gender": "F",
+      "w_number": "676227",
+      "birth_date": "1998-02-05",
+      "email": "w0676227@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 34,
     "fields": {
       "hero": 55,
       "first_name": "Chiranjeevee",
@@ -546,68 +505,148 @@
       "gender": "M",
       "w_number": "659946",
       "birth_date": "1999-02-12",
-      "email": "w0659946@selu.edu"
+      "email": "w0659946@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
     "model": "polls.person",
-    "pk": 15,
+    "pk": 35,
     "fields": {
-      "hero": 54,
+      "hero": 63,
       "first_name": "Damodar",
       "middle_name": "",
       "last_name": "Dahal",
       "gender": "M",
       "w_number": "659424",
       "birth_date": "1997-06-27",
-      "email": "w0659424@selu.edu"
+      "email": "w0659424@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
     "model": "polls.person",
-    "pk": 16,
+    "pk": 36,
     "fields": {
-      "hero": 49,
+      "hero": 62,
       "first_name": "Deep",
       "middle_name": "",
       "last_name": "Karki",
       "gender": "M",
       "w_number": "572171",
       "birth_date": "1994-09-07",
-      "email": "w0572171@selu.edu"
+      "email": "w0572171@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
     "model": "polls.person",
-    "pk": 17,
+    "pk": 37,
     "fields": {
-      "hero": 66,
+      "hero": 64,
+      "first_name": "Deepesh",
+      "middle_name": "",
+      "last_name": "Sigdel",
+      "gender": "M",
+      "w_number": "548428",
+      "birth_date": "1995-06-05",
+      "email": "w0548428@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 38,
+    "fields": {
+      "hero": 59,
       "first_name": "Dhiraj",
       "middle_name": "",
       "last_name": "Kharel",
       "gender": "M",
       "w_number": "659707",
       "birth_date": "1997-06-04",
-      "email": "w0659707@selu.edu"
+      "email": "w0659707@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
     "model": "polls.person",
-    "pk": 18,
+    "pk": 39,
     "fields": {
-      "hero": 64,
+      "hero": 61,
+      "first_name": "Dipika",
+      "middle_name": "",
+      "last_name": "Ghimire",
+      "gender": "F",
+      "w_number": "677116",
+      "birth_date": "1998-05-06",
+      "email": "w0677116@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 40,
+    "fields": {
+      "hero": 56,
+      "first_name": "Eraj",
+      "middle_name": "",
+      "last_name": "Khatiwada",
+      "gender": "M",
+      "w_number": "673347",
+      "birth_date": "1999-07-20",
+      "email": "w0673347@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 41,
+    "fields": {
+      "hero": 56,
+      "first_name": "Ghanashyam",
+      "middle_name": "",
+      "last_name": "Paudel",
+      "gender": "M",
+      "w_number": "677899",
+      "birth_date": "1996-12-25",
+      "email": "w0677899@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 42,
+    "fields": {
+      "hero": 62,
       "first_name": "Jeetendra",
       "middle_name": "",
       "last_name": "Khadka",
       "gender": "M",
       "w_number": "574687",
       "birth_date": "1995-01-02",
-      "email": "w0574687@selu.edu"
+      "email": "w0574687@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
     "model": "polls.person",
-    "pk": 19,
+    "pk": 43,
+    "fields": {
+      "hero": 53,
+      "first_name": "Kalendra",
+      "middle_name": "",
+      "last_name": "Khadka",
+      "gender": "M",
+      "w_number": "677394",
+      "birth_date": "1999-03-11",
+      "email": "w0677394@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 44,
     "fields": {
       "hero": 46,
       "first_name": "Kiran",
@@ -616,194 +655,598 @@
       "gender": "M",
       "w_number": "638993",
       "birth_date": "1993-04-17",
-      "email": "w0638993@selu.edu"
+      "email": "w0638993@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
     "model": "polls.person",
-    "pk": 20,
+    "pk": 45,
     "fields": {
-      "hero": 39,
+      "hero": 68,
+      "first_name": "Louis",
+      "middle_name": "",
+      "last_name": "Gurung",
+      "gender": "F",
+      "w_number": "677930",
+      "birth_date": "1997-08-19",
+      "email": "w0677930@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 46,
+    "fields": {
+      "hero": 51,
+      "first_name": "Manish",
+      "middle_name": "",
+      "last_name": "Paudel",
+      "gender": "M",
+      "w_number": "676509",
+      "birth_date": "1998-10-03",
+      "email": "w0676509@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 47,
+    "fields": {
+      "hero": 53,
+      "first_name": "Milan",
+      "middle_name": "",
+      "last_name": "Acharya",
+      "gender": "M",
+      "w_number": "683696",
+      "birth_date": "1998-09-18",
+      "email": "w0683696@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 48,
+    "fields": {
+      "hero": 66,
+      "first_name": "Mukunda",
+      "middle_name": "",
+      "last_name": "Jaishi",
+      "gender": "M",
+      "w_number": "676226",
+      "birth_date": "1998-05-26",
+      "email": "w0676226@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 49,
+    "fields": {
+      "hero": 72,
+      "first_name": "Namrata",
+      "middle_name": "",
+      "last_name": "Phuyal",
+      "gender": "F",
+      "w_number": "677927",
+      "birth_date": "1997-08-21",
+      "email": "w0677927@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 50,
+    "fields": {
+      "hero": 56,
       "first_name": "Nhujaa",
       "middle_name": "",
       "last_name": "Tuladhar",
       "gender": "M",
       "w_number": "659442",
       "birth_date": "1998-01-25",
-      "email": "w0659442@selu.edu"
+      "email": "w0659442@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
     "model": "polls.person",
-    "pk": 21,
+    "pk": 51,
     "fields": {
-      "hero": 66,
+      "hero": 38,
+      "first_name": "Nikhilesh",
+      "middle_name": "",
+      "last_name": "Chhetri",
+      "gender": "M",
+      "w_number": "675101",
+      "birth_date": "1998-09-17",
+      "email": "w0675101@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 52,
+    "fields": {
+      "hero": 60,
       "first_name": "Nikisun",
       "middle_name": "",
       "last_name": "Shrestha",
       "gender": "M",
       "w_number": "664773",
       "birth_date": "1997-12-28",
-      "email": "w0664773@selu.edu"
+      "email": "w0664773@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
     "model": "polls.person",
-    "pk": 22,
+    "pk": 53,
     "fields": {
-      "hero": 63,
+      "hero": 64,
+      "first_name": "Nirmal",
+      "middle_name": "",
+      "last_name": "Bhusal",
+      "gender": "M",
+      "w_number": "677271",
+      "birth_date": "1999-02-12",
+      "email": "w0677271@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 54,
+    "fields": {
+      "hero": 62,
       "first_name": "Oshu",
       "middle_name": "",
       "last_name": "Chhetri",
       "gender": "M",
       "w_number": "573482",
       "birth_date": "1995-08-20",
-      "email": "w0573482@selu.edu"
+      "email": "w0573482@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
     "model": "polls.person",
-    "pk": 23,
+    "pk": 55,
     "fields": {
-      "hero": 53,
+      "hero": 42,
+      "first_name": "Pankaj",
+      "middle_name": "",
+      "last_name": "Sherchan",
+      "gender": "M",
+      "w_number": "573147",
+      "birth_date": "1995-10-11",
+      "email": "w0573147@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 56,
+    "fields": {
+      "hero": 56,
       "first_name": "Pawan",
       "middle_name": "",
       "last_name": "Kafle",
       "gender": "M",
       "w_number": "660663",
       "birth_date": "1996-07-16",
-      "email": "w0660663@selu.edu"
+      "email": "w0660663@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
     "model": "polls.person",
-    "pk": 24,
+    "pk": 57,
     "fields": {
-      "hero": 59,
+      "hero": 41,
       "first_name": "Pawan",
       "middle_name": "",
       "last_name": "Shrestha",
       "gender": "M",
       "w_number": "658708",
       "birth_date": "1996-11-05",
-      "email": "w0658708@selu.edu"
+      "email": "w0658708@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
     "model": "polls.person",
-    "pk": 25,
+    "pk": 58,
     "fields": {
-      "hero": 69,
+      "hero": 52,
       "first_name": "Pemba",
       "middle_name": "",
       "last_name": "Sherpa",
       "gender": "F",
       "w_number": "569372",
       "birth_date": "1993-12-04",
-      "email": "w0569372@selu.edu"
+      "email": "w0569372@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
     "model": "polls.person",
-    "pk": 26,
+    "pk": 59,
     "fields": {
-      "hero": 61,
+      "hero": 73,
       "first_name": "Pragya",
       "middle_name": "",
       "last_name": "Khadka",
       "gender": "F",
       "w_number": "649131",
       "birth_date": "1996-04-23",
-      "email": "w0649131@selu.edu"
+      "email": "w0649131@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
     "model": "polls.person",
-    "pk": 27,
+    "pk": 60,
     "fields": {
-      "hero": 53,
+      "hero": 72,
+      "first_name": "Prakriti",
+      "middle_name": "",
+      "last_name": "Adhikari",
+      "gender": "F",
+      "w_number": "675099",
+      "birth_date": "1997-02-26",
+      "email": "w0675099@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 61,
+    "fields": {
+      "hero": 60,
       "first_name": "Prashanna",
       "middle_name": "",
       "last_name": "Bhattarai",
       "gender": "M",
       "w_number": "569349",
       "birth_date": "1995-08-28",
-      "email": "w0569349@selu.edu"
+      "email": "w0569349@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
     "model": "polls.person",
-    "pk": 28,
+    "pk": 62,
     "fields": {
-      "hero": 47,
+      "hero": 63,
+      "first_name": "Prashant",
+      "middle_name": "",
+      "last_name": "Basnet",
+      "gender": "M",
+      "w_number": "675107",
+      "birth_date": "1999-01-22",
+      "email": "w0675107@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 63,
+    "fields": {
+      "hero": 42,
+      "first_name": "Prashant",
+      "middle_name": "",
+      "last_name": "Khadka",
+      "gender": "M",
+      "w_number": "674906",
+      "birth_date": "1997-05-09",
+      "email": "w0674906@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 64,
+    "fields": {
+      "hero": 61,
       "first_name": "Pratikshya",
       "middle_name": "",
       "last_name": "Timalsina",
       "gender": "F",
       "w_number": "659950",
       "birth_date": "1996-09-30",
-      "email": "w0659950@selu.edu"
+      "email": "w0659950@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
     "model": "polls.person",
-    "pk": 29,
+    "pk": 65,
     "fields": {
-      "hero": 56,
+      "hero": 64,
+      "first_name": "Prayush",
+      "middle_name": "",
+      "last_name": "Pokharel",
+      "gender": "M",
+      "w_number": "573483",
+      "birth_date": "1996-01-15",
+      "email": "w0573483@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 66,
+    "fields": {
+      "hero": 55,
       "first_name": "Prince",
       "middle_name": "",
       "last_name": "Gurung",
       "gender": "M",
       "w_number": "658718",
       "birth_date": "1998-04-25",
-      "email": "w0658718@selu.edu"
+      "email": "w0658718@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
     "model": "polls.person",
-    "pk": 30,
+    "pk": 67,
+    "fields": {
+      "hero": 61,
+      "first_name": "Puja",
+      "middle_name": "",
+      "last_name": "Sapkota",
+      "gender": "F",
+      "w_number": "678461",
+      "birth_date": "1998-08-23",
+      "email": "w0678461@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 68,
+    "fields": {
+      "hero": 40,
+      "first_name": "Rahul",
+      "middle_name": "",
+      "last_name": "Shrestha",
+      "gender": "M",
+      "w_number": "546197",
+      "birth_date": "1994-09-26",
+      "email": "w0546197@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 69,
+    "fields": {
+      "hero": 64,
+      "first_name": "Rajeev",
+      "middle_name": "",
+      "last_name": "Lama",
+      "gender": "M",
+      "w_number": "676359",
+      "birth_date": "1998-01-11",
+      "email": "w0676359@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 70,
+    "fields": {
+      "hero": 62,
+      "first_name": "Rajkumar",
+      "middle_name": "",
+      "last_name": "Adhikari",
+      "gender": "M",
+      "w_number": "676487",
+      "birth_date": "1998-09-30",
+      "email": "w0676487@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 71,
+    "fields": {
+      "hero": 63,
+      "first_name": "Roshan",
+      "middle_name": "",
+      "last_name": "Sapkota",
+      "gender": "M",
+      "w_number": "675035",
+      "birth_date": "1998-08-06",
+      "email": "w0675035@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 72,
     "fields": {
       "hero": 57,
+      "first_name": "Roshmina",
+      "middle_name": "",
+      "last_name": "Thapa",
+      "gender": "F",
+      "w_number": "492311",
+      "birth_date": "1992-03-03",
+      "email": "w0492311@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 73,
+    "fields": {
+      "hero": 39,
       "first_name": "Sabina",
       "middle_name": "",
       "last_name": "Sitaula",
-      "gender": "F",
+      "gender": "M",
       "w_number": "659450",
       "birth_date": "1998-09-22",
-      "email": "w0659450@selu.edu"
+      "email": "w0659450@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
     "model": "polls.person",
-    "pk": 31,
+    "pk": 74,
     "fields": {
-      "hero": 50,
+      "hero": 60,
+      "first_name": "Sachin",
+      "middle_name": "",
+      "last_name": "Khanal",
+      "gender": "M",
+      "w_number": "674908",
+      "birth_date": "1998-06-28",
+      "email": "w0674908@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 75,
+    "fields": {
+      "hero": 71,
+      "first_name": "Sahara",
+      "middle_name": "",
+      "last_name": "Shivakoti",
+      "gender": "F",
+      "w_number": "548861",
+      "birth_date": "1993-12-14",
+      "email": "w0548861@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 76,
+    "fields": {
+      "hero": 68,
+      "first_name": "Sandhya",
+      "middle_name": "",
+      "last_name": "Neupane",
+      "gender": "F",
+      "w_number": "677119",
+      "birth_date": "1998-05-09",
+      "email": "w0677119@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 77,
+    "fields": {
+      "hero": 67,
+      "first_name": "Sangam",
+      "middle_name": "",
+      "last_name": "Gyawali",
+      "gender": "M",
+      "w_number": "684179",
+      "birth_date": "1998-07-29",
+      "email": "w0684179@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 78,
+    "fields": {
+      "hero": 54,
+      "first_name": "Sanjay",
+      "middle_name": "",
+      "last_name": "Budhathoki",
+      "gender": "M",
+      "w_number": "677110",
+      "birth_date": "1999-02-21",
+      "email": "w0677110@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 79,
+    "fields": {
+      "hero": 65,
+      "first_name": "Sanjay",
+      "middle_name": "",
+      "last_name": "Lama",
+      "gender": "M",
+      "w_number": "675133",
+      "birth_date": "1997-04-05",
+      "email": "w0675133@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 80,
+    "fields": {
+      "hero": 72,
       "first_name": "Satrishna",
       "middle_name": "",
       "last_name": "Lamsal",
       "gender": "F",
       "w_number": "536519",
       "birth_date": "1994-02-14",
-      "email": "w0536519@selu.edu"
+      "email": "W0536519@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
     "model": "polls.person",
-    "pk": 32,
+    "pk": 81,
     "fields": {
-      "hero": 70,
+      "hero": 49,
+      "first_name": "Shiva",
+      "middle_name": "",
+      "last_name": "Shrestha",
+      "gender": "M",
+      "w_number": "574690",
+      "birth_date": "1994-08-08",
+      "email": "w0574690@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 82,
+    "fields": {
+      "hero": 52,
       "first_name": "Shreya",
       "middle_name": "",
       "last_name": "Thapa",
       "gender": "F",
       "w_number": "575373",
       "birth_date": "1995-03-22",
-      "email": "w0575373@selu.edu"
+      "email": "w0575373@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
     "model": "polls.person",
-    "pk": 33,
+    "pk": 83,
+    "fields": {
+      "hero": 63,
+      "first_name": "Siddhanta",
+      "middle_name": "",
+      "last_name": "Shrestha",
+      "gender": "M",
+      "w_number": "573166",
+      "birth_date": "1994-11-18",
+      "email": "w0573166@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 84,
     "fields": {
       "hero": 73,
       "first_name": "Sijan",
@@ -812,40 +1255,88 @@
       "gender": "F",
       "w_number": "659725",
       "birth_date": "1997-10-20",
-      "email": "w0659725@selu.edu"
+      "email": "w0659725@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
     "model": "polls.person",
-    "pk": 34,
+    "pk": 85,
     "fields": {
-      "hero": 52,
-      "first_name": "Sristi",
+      "hero": 46,
+      "first_name": "Subash",
       "middle_name": "",
-      "last_name": "Lamichhane",
-      "gender": "F",
-      "w_number": "555331",
-      "birth_date": "1994-01-17",
-      "email": "w0555331@selu.edu"
+      "last_name": "Mishra",
+      "gender": "M",
+      "w_number": "546179",
+      "birth_date": "1994-10-10",
+      "email": "w0546179@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
     "model": "polls.person",
-    "pk": 35,
+    "pk": 86,
     "fields": {
-      "hero": 49,
+      "hero": 42,
+      "first_name": "Sujit",
+      "middle_name": "",
+      "last_name": "Subedi",
+      "gender": "M",
+      "w_number": "676224",
+      "birth_date": "1998-05-23",
+      "email": "w0676224@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 87,
+    "fields": {
+      "hero": 45,
+      "first_name": "Sushant",
+      "middle_name": "",
+      "last_name": "Gupta",
+      "gender": "M",
+      "w_number": "675108",
+      "birth_date": "1999-01-23",
+      "email": "w0675108@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 88,
+    "fields": {
+      "hero": 58,
       "first_name": "Sushovan",
       "middle_name": "",
       "last_name": "Adhikari",
       "gender": "M",
       "w_number": "654380",
       "birth_date": "1997-05-05",
-      "email": "w0654380@selu.edu"
+      "email": "w0654380@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
     "model": "polls.person",
-    "pk": 36,
+    "pk": 89,
+    "fields": {
+      "hero": 73,
+      "first_name": "Swastika",
+      "middle_name": "",
+      "last_name": "Paudel",
+      "gender": "F",
+      "w_number": "676518",
+      "birth_date": "1999-02-03",
+      "email": "w0676518@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 90,
     "fields": {
       "hero": 58,
       "first_name": "Tanab",
@@ -854,18 +1345,83 @@
       "gender": "M",
       "w_number": "642737",
       "birth_date": "1994-06-30",
-      "email": "w0642737@selu.edu"
+      "email": "w0642737@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   },
   {
-    "model": "polls.emailmaster",
-    "pk": 8,
+    "model": "polls.person",
+    "pk": 91,
     "fields": {
-      "given_name": "Damodar",
-      "display_name": "Damodar Dahal",
-      "email": "underscoredam@gmail.com",
-      "refresh_token": "ya29.GmbhBYvCkDOxFkPfOHT6cdP8hcghCEjuUfupSdpmsTBqVI-utpF1Igmr-XQwOdiCuhJ_wMOR_hhXWtjPN_7-XZMLrUc0oB5XdAxggfGCA-IaCropsd3kCDI6QbEMhtOgOsSXciDkSMQ",
-      "updated_on": "2018-06-21"
+      "hero": 62,
+      "first_name": "Tika",
+      "middle_name": "",
+      "last_name": "Pahadi",
+      "gender": "M",
+      "w_number": "573179",
+      "birth_date": "1994-10-03",
+      "email": "w0573179@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 92,
+    "fields": {
+      "hero": 40,
+      "first_name": "Umesh",
+      "middle_name": "",
+      "last_name": "Regmi",
+      "gender": "M",
+      "w_number": "560641",
+      "birth_date": "1995-04-30",
+      "email": "w0560641@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 93,
+    "fields": {
+      "hero": 64,
+      "first_name": "Utsav",
+      "middle_name": "",
+      "last_name": "Bhattarai",
+      "gender": "M",
+      "w_number": "655844",
+      "birth_date": "1997-09-04",
+      "email": "w0655844@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 94,
+    "fields": {
+      "hero": 55,
+      "first_name": "Yash",
+      "middle_name": "",
+      "last_name": "Malla",
+      "gender": "M",
+      "w_number": "573479",
+      "birth_date": "1996-02-19",
+      "email": "w0573479@selu.edu",
+      "last_birthday_email_sent_on_year": 0
+    }
+  },
+  {
+    "model": "polls.person",
+    "pk": 95,
+    "fields": {
+      "hero": 73,
+      "first_name": "Yashmin",
+      "middle_name": "",
+      "last_name": "Sainju",
+      "gender": "F",
+      "w_number": "524916",
+      "birth_date": "1995-02-13",
+      "email": "w0524916@selu.edu",
+      "last_birthday_email_sent_on_year": 0
     }
   }
 ]
