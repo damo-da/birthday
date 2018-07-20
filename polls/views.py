@@ -19,6 +19,8 @@ from .helpers.birthday_helper import get_template_params
 from .helpers.email_helper import send_email
 import datetime
 from helpers.log import log
+from mysite.settings import TIME_ZONE
+import pytz
 
 
 def index(request):
@@ -30,7 +32,8 @@ def test(request):
 
 
 def send_birthday_emails(request):
-    now = datetime.datetime.now()
+    tz = pytz.timezone(TIME_ZONE)
+    now = datetime.datetime.now(tz)
 
     todays_birthday_persons = Person.objects\
         .filter(birth_date__month=now.month,
