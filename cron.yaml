@@ -14,3 +14,8 @@ cron:
   url: /send_birthday_emails
   target: beta
   schedule: every day 06:01
+- description: "send happy birthday email 4"
+  timezone: America/Chicago
+  url: /send_birthday_emails
+  target: beta
+  schedule: every day 22:03
